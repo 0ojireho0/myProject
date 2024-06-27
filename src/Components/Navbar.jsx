@@ -44,13 +44,13 @@ const Navbar = () => {
                     <div className='w-12 rounded-full h-12 items-center flex justify-center border-2 border-black ml-5'>
                         <a href="/" className='montserratextrabold w-full h-full flex items-center justify-center'><h1>J</h1></a>
                     </div>
-                    <FontAwesomeIcon icon={faX} onClick={() => setShowSideBar(!showSideBar)} size='xl' className='ml-5' />
+                    <FontAwesomeIcon icon={faX} onClick={() => setShowSideBar(!showSideBar)} size='xl' className='mr-2' />
                 </div>
                 <div className='fixed  bg-white w-2/3 h-full justify-center flex top-20 sidecolumn'>
                     <ul className=' text-justify flex flex-col space-y-24 mt-8'>
                         {navItems.map((navs, i)=>{
                             return(
-                                <li className='text-xl montserratsemibold'><Link to={navs.path} spy={true} smooth={true} offset={-60} duration={500} key={i}  onClick={closeSidebar}>{navs.name}</Link></li>
+                                <li className='text-xl montserratsemibold' key={i}><Link to={navs.path} spy={true} smooth={true} offset={-60} duration={500}  onClick={closeSidebar}>{navs.name}</Link></li>
                             )
                         })}
                     </ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <ul className={` md:flex md:gap-3`}>
                 {navItems.map((navs, i)=>{
                     return(
-                        <li className='text-md montserratsemibold lg:text-xl xl:text-xl md:cursor-pointer nav-item'><Link to={navs.path} spy={true} smooth={true} offset={-70} duration={500} key={i}>{navs.name}</Link></li>
+                        <li className='text-md montserratsemibold lg:text-xl xl:text-xl md:cursor-pointer nav-item' key={i}><Link to={navs.path} spy={true} smooth={true} offset={-70} duration={500}>{navs.name}</Link></li>
                     )
                 })}
             </ul>
