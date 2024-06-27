@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------- FONTS ------------------------- */
+@font-face {
+    font-family: MontserratBold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+.montserratbold{
+    font-family: MontserratBold;
+}
+
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+.montserratextrabold{
+    font-family: MontserratExtraBold;
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+.montserratmedium{
+    font-family: MontserratMedium;
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+.montserratsemibold{
+    font-family: MontserratSemiBold;
+}
+
+/* -------------------- FONTS ------------------------- */
+
+.sidecolumn::after{
+    content: "";
+    border: 2px solid black;
+    height: 75vh;
+    right: 10px; 
+    top: 10px;
+    position: absolute;
+}
+
+.nav-item .active{
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+    left: 0;
+    animation: typing 3s steps(21) infinite;
+    background: white;
+}
+
+@keyframes typing {
+    
+    100%{
+        left: 100%;
+        margin: 0 -15px 0 15px;
+        width: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @keyframes typing {
+        100%{
+            left:100%;
+            margin: 0 -25px 0 25px;
+            width: 0%;
+        }
+    }
+  }
+
+  .aboutme:hover{
+    transition: 700ms;
+    background: #0C359E;
+    color: white;
+}
