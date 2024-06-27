@@ -50,7 +50,7 @@ const Navbar = () => {
                     <ul className=' text-justify flex flex-col space-y-24 mt-8'>
                         {navItems.map((navs, i)=>{
                             return(
-                                <li className='text-xl montserratsemibold'><Link to={navs.path} spy={true} offset={-60} duration={500} key={i}  onClick={closeSidebar}>{navs.name}</Link></li>
+                                <li className='text-xl montserratsemibold'><Link to={navs.path} spy={true} smooth={true} offset={-60} duration={500} key={i}  onClick={closeSidebar}>{navs.name}</Link></li>
                             )
                         })}
                     </ul>
