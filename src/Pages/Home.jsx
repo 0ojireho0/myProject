@@ -12,7 +12,7 @@ const Home = () => {
             <span className='montserratextrabold text-[#0C359E] text-2xl md:text-5xl ml-1 typing relative'>Full-Stack Developer.</span>
         </div>
         <div className='flex justify-center'>
-            <div className='justify-center items-center flex mt-5 border-[7px] border-black w-[7rem] h-[3rem] rounded-full md:w-[11rem] md:h-12 cursor-pointer aboutme '>
+            <div className='justify-center items-center flex mt-5 border-[7px] border-black w-[7rem] h-[3rem] rounded-full md:w-[11rem] md:h-12 cursor-pointer md:hover:duration-700 md:hover:bg-[#0C359E] md:hover:text-white '>
               <Link to="about" spy={true} smooth={true} offset={-60} duration={500} className='montserratextrabold text-base md:text-xl w-full text-center'>About me</Link>
             </div>
           </div>

@@ -73,7 +73,7 @@ const Navbar = () => {
             <ul className={` md:flex md:gap-3`}>
                 {navItems.map((navs, i)=>{
                     return(
-                        <li className='text-md montserratsemibold lg:text-xl xl:text-xl md:cursor-pointer nav-item' key={i}><Link to={navs.path} spy={true} smooth={true} offset={-70} duration={500}>{navs.name}</Link></li>
+                        <li className='text-md montserratsemibold lg:text-xl xl:text-xl md:cursor-pointer nav-item' key={i}><Link to={navs.path} spy={true} smooth={true} offset={-65} duration={500}>{navs.name}</Link></li>
                     )
                 })}
             </ul>
