@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div className='w-full h-[90vh] justify-center flex items-center '>
+    <div className='w-full h-[90vh] justify-center flex items-center  '>
       <div className=' h-full flex flex-col pt-[10rem]'>
         <h1 className='montserratsemibold text-2xl md:text-5xl md:mb-3'>Hello, I'm</h1>
         <h1 className='montserratextrabold text-2xl md:text-5xl md:mb-3'>Jeremiah M. Quintano</h1>
