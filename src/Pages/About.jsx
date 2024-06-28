@@ -125,7 +125,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <div className='w-[60vw] bg-black h-1 mt-20 m-auto'></div>
 
     </div>
   )
