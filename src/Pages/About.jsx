@@ -1,12 +1,40 @@
 import React from 'react'
 import myPicture from "../assets/Quintano_Pic.jpg"
+import { FaHtml5 } from 'react-icons/fa'
+import { FaCss3Alt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiCplusplus } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { SiPostman } from "react-icons/si";
+import { IoLogoFigma } from "react-icons/io5";
+
+
+
+
+
+
 
 const About = () => {
 
   
 
   return (
-    <div className='w-full h-[350vh] md:h-[230vh] pt-10' id='about'>
+    <div className='w-full h-full  pt-10 about-height pb-10' id='about'>
       <h1 className='text-center montserratextrabold text-3xl'>About Me</h1>
       <div className='mt-5 md:flex md:flex-row md:justify-center xl:gap-24'>
         <div className='flex justify-center'>
@@ -20,30 +48,78 @@ const About = () => {
       <div className='mt-10'>
         <h1 className='text-center montserratbold text-2xl'>My Skils & Tools</h1>
         <div className='md:flex md:justify-center'>
-          <div className='flex flex-col justify-center items-center mt-5 md:grid md:grid-cols-2 md:gap-x-10 '>
+          <div className='flex flex-col justify-center items-center mt-5 md:grid md:grid-cols-2 md:gap-x-10 md:w-[40rem] lg:grid-cols-3 lg:w-[55rem] '>
             <div className='w-[17rem] h-[13rem] border-4 border-black'>
               <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
                 <h1 className='montserratbold text-white'>FRONT-END</h1>
+              </div>
+              <div className='w-full h-[10rem]  '>
+                <div className='w-full bg-white h-[5rem] flex items-center justify-center gap-x-2 pt-5 '>
+                  <FaHtml5 className='text-[#E44F26] text-5xl ' />
+                  <FaCss3Alt className='text-[#33A9DC] text-5xl ' />
+                  <RiTailwindCssFill className='text-[#38BDF8] text-5xl ' />
+                  <FaReact className='text-[#00D8FF] text-5xl ' />
+                </div>
+                <div className='w-full bg-white h-[5rem] flex items-center justify-center'>
+                  <FaBootstrap className='text-[#6B11F4] text-5xl ' />
+                </div>
               </div>
             </div>
             <div className='w-[17rem] h-[13rem] border-4 border-black mt-5 md:mt-0'>
               <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
                 <h1 className='montserratbold text-white'>BACK-END</h1>
               </div>
+              <div className='w-full h-[10rem]  '>
+                <div className='w-full bg-white h-[5rem] flex items-center justify-center gap-x-2 pt-5 '>
+                  <FaNodeJs className='text-[#531B8A] text-5xl ' />
+                  <SiExpress className='text-[#000000] text-5xl ' />
+                  <SiMysql className='text-[#00758F] text-5xl ' />
+                  <SiMongodb className='text-[#01EC64] text-5xl ' />
+                </div>
+                <div className='w-full bg-white h-[5rem] flex items-center justify-center'>
+                  <SiFlask className='text-[#000000] text-5xl ' />
+                  <IoLogoFirebase className='text-[#FCCA3F] text-5xl ' />
+                </div>
+              </div>
             </div>
-            <div className='w-[17rem] h-[13rem] border-4 border-black mt-5'>
+            <div className='w-[17rem] h-[13rem] border-4 border-black mt-5 lg:mt-0'>
               <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
                 <h1 className='montserratbold text-white'>DEVOPS</h1>
               </div>
-            </div>
-            <div className='w-[17rem] h-[13rem] border-4 border-black mt-5'>
-              <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
-                <h1 className='montserratbold text-white'>LANGUAGES</h1>
+              <div className='w-full bg-white h-[10rem] flex items-center justify-center gap-x-5'>
+                <FaGitAlt className='text-[#F34F29] text-5xl ' />
+                <FaGithub className='text-[#531B8A] text-5xl ' />
+                <FaGitlab className='text-[#531B8A] text-5xl ' />
               </div>
             </div>
-            <div className='w-[17rem] h-[13rem] border-4 border-black mt-5'>
-              <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
-                <h1 className='montserratbold text-white'>TOOL</h1>
+            <div className='lg:flex lg:justify-center lg:items-center lg:w-[40rem]'>
+              <div className='w-[17rem] h-[13rem] border-4 border-black mt-5'>
+                <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
+                  <h1 className='montserratbold text-white'>LANGUAGES</h1>
+                </div>
+                <div className='w-full h-[10rem]  '>
+                  <div className='w-full bg-white h-[5rem] flex items-center justify-center gap-x-2 pt-5 '>
+                    <IoLogoJavascript className='text-[#F5DE19] text-5xl ' />
+                    <SiCplusplus className='text-[#659AD2] text-5xl ' />
+                    <FaPython className='text-[#387EB8] text-5xl ' />
+                    <FaPhp className='text-[#777BB3] text-5xl ' />
+                  </div>
+                  <div className='w-full bg-white h-[5rem] flex items-center justify-center'>
+                    <FaJava className='text-[#5382A1] text-5xl ' />
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div className='md:flex md:justify-center md:items-center md:w-[40rem]'>
+              <div className='w-[17rem] h-[13rem] border-4 border-black mt-5'>
+                <div className='w-full h-10 bg-[#0C359E] border-b-4 border-black flex justify-center items-center '>
+                  <h1 className='montserratbold text-white'>TOOL</h1>
+                </div>
+                <div className='w-full bg-white h-[10rem] flex items-center justify-center gap-x-5'>
+                  <VscVscode className='text-[#1F9CF0] text-5xl ' />
+                  <SiPostman className='text-[#F37036] text-5xl ' />
+                  <IoLogoFigma className='text-[#000000] text-5xl ' />
+                </div>
               </div>
             </div>
           </div>
