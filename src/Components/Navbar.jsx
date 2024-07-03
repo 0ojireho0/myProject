@@ -23,13 +23,13 @@ const Navbar = () => {
         },
         {
           id: 3,
-          name: "CONTACT",
-          path: "contact"
+          name: "RESUME",
+          path: "resume"
         },
         {
           id: 4,
-          name: "RESUME",
-          path: "resume"
+          name: "CONTACT",
+          path: "contact"
         }
       ]
     

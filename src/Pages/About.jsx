@@ -46,7 +46,7 @@ const About = () => {
       </div>
 
       <div className='mt-10'>
-        <h1 className='text-center montserratbold text-2xl'>My Skils & Tools</h1>
+        <h1 className='text-center montserratbold text-2xl'>My Skills & Tools</h1>
         <div className='md:flex md:justify-center'>
           <div className='flex flex-col justify-center items-center mt-5 md:grid md:grid-cols-2 md:gap-x-10 md:w-[40rem] lg:grid-cols-3 lg:w-[55rem] '>
             <div className='w-[17rem] h-[13rem] border-4 border-black'>
