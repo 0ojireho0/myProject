@@ -2,7 +2,6 @@ import React from 'react'
 import tripleoGlass1 from "../assets/TripleOGlass-1.png"
 import bantaybaby1 from "../assets/BantayBaby-1.png"
 import fittology1 from "../assets/Fittology-1.png"
-import { Carousel } from '@material-tailwind/react'
 
 const Projects = () => {
 
@@ -48,11 +47,11 @@ const Projects = () => {
                 <div className='w-[90vw] flex flex-col justify-center items-center m-auto md:w-[50vw] md:items-start '>
                   <h1 className='text-xs w-[50vw] montserratbold hidden md:block lg:w-[40vw] xl:w-[27vw] '>{items.title}</h1>
                   <p className=' text-center text-xs md:text-justify md:mr-5 lg:w-[25rem] montserratmedium '>{items.description}</p>
-                  <div className='grid grid-cols-3 w-[17rem] mt-2 gap-2 '>
+                  <div className='grid grid-cols-3 md:grid-cols-4 md:w-[23rem] w-[17rem] mt-2 gap-2 '>
                     {items.technologies.map((items, i)=>{
                       return(
-                        <div className=' flex gap-2 shadow-[2px_3px] border-4 border-black rounded-full'>
-                          <span className='w-full rounded-full text-center  text-[0.6rem] montserratextrabold  text-[#0C359E] '>{items}</span>
+                        <div className=' flex gap-2 shadow-[2px_3px] border-4 border-black rounded-full   ' key={i}>
+                          <span className='w-full rounded-full text-center  text-[0.6rem] montserratextrabold text-[#0C359E] md:hover:text-white md:hover:bg-[#0C359E] md:cursor-pointer md:duration-300 '>{items}</span>
                         </div>
                       )
                     })}
