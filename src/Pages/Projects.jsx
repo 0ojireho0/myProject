@@ -50,8 +50,8 @@ const Projects = () => {
                   <div className='grid grid-cols-3 md:grid-cols-4 md:w-[23rem] w-[17rem] mt-2 gap-2 '>
                     {items.technologies.map((items, i)=>{
                       return(
-                        <div className=' flex gap-2 shadow-[2px_3px] border-4 border-black rounded-full xl:w-full   ' key={i}>
-                          <span className='w-full rounded-full text-center  text-[0.6rem] montserratextrabold text-[#0C359E] md:hover:text-white md:hover:bg-[#0C359E] md:cursor-pointer md:duration-300 xl:text-[0.8rem] '>{items}</span>
+                        <div className=' flex gap-2 shadow-[2px_3px] border-4 border-black rounded-full   ' key={i}>
+                          <span className='w-full rounded-full text-center  text-[0.6rem] montserratextrabold text-[#0C359E] md:hover:text-white md:hover:bg-[#0C359E] md:cursor-pointer md:duration-300  '>{items}</span>
                         </div>
                       )
                     })}
