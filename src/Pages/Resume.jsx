@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { GoDownload } from "react-icons/go";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import myResume from "../assets/myResume.png"
+import MyDocument from './pdfviewer';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+
 
 
 const Resume = () => {
@@ -20,7 +23,11 @@ const Resume = () => {
         </div>
         <div className='flex flex-col justify-center items-center mt-5 md:flex-row   '>
           <div className='border-[3px] border-black w-[12rem] rounded-full h-12 items-center flex justify-between '>
-            <GoDownload className=' ml-5 text-2xl text-[#0C359E] ' /><span className='text-[#0C359E] montserratextrabold text-xl mr-auto ml-5'>Download</span>
+            <GoDownload className=' ml-5 text-2xl text-[#0C359E] ' /><span className='text-[#0C359E] montserratextrabold text-xl mr-auto ml-5'>
+              <PDFDownloadLink document={<MyDocument />} fileName='Quintano-Resume'>
+                {({loading}) => (loading ? <button>Loading...</button> : <button>Download</button>) }
+              </PDFDownloadLink>
+            </span>
           </div>
           <div className='border-[3px] border-black w-[12rem] rounded-full h-12 items-center flex justify-between mt-3 md:mt-0 md:ml-4 cursor-pointer' onClick={toggleView}>
             <FaMagnifyingGlass className='ml-5 text-2xl text-[#0C359E] ' /><span className='text-[#0C359E] montserratextrabold text-xl mr-auto ml-5'>View</span>
