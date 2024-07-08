@@ -19,7 +19,7 @@ const Resume = () => {
     <>
       <div className='w-full pb-5 mt-10' id='resume'>
         <div className='flex flex-col justify-center items-center'>
-          <h1 className='montserratextrabold text-2xl'>Resume</h1>
+          <h1 className='montserratextrabold text-4xl'>Resume</h1>
         </div>
         <div className='flex flex-col justify-center items-center mt-5 md:flex-row   '>
           <div className='border-[3px] border-black w-[12rem] rounded-full h-12 items-center flex justify-between '>
@@ -33,6 +33,7 @@ const Resume = () => {
             <FaMagnifyingGlass className='ml-5 text-2xl text-[#0C359E] ' /><span className='text-[#0C359E] montserratextrabold text-xl mr-auto ml-5'>View</span>
           </div>
         </div>
+        <div className='w-[60vw] bg-black h-1 mt-20 m-auto'></div>
       </div>
 
       {showView && (

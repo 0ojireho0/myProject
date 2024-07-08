@@ -83,6 +83,15 @@
             width: 0%;
         }
     }
+    
   }
 
+.inputfield:focus ~ .inputlabel{
+    top: -20px;
+    font-size: 12px;
+    color: black;
+}
 
+.inputfield:focus ~ .inputlabel ~ .inputhighlight {
+    width: 100%;
+  }
