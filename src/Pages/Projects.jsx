@@ -42,7 +42,7 @@ const Projects = () => {
             return(
               <div className='mt-10 md:flex ' key={i}>
                 <div className='flex justify-center items-center '>
-                  <h1 className='text-xs text-center w-[65vw] montserratbold mb-3 md:hidden'>{items.title}</h1>
+                  <motion.h1 className='text-xs text-center w-[65vw] montserratbold mb-3 md:hidden' whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}>{items.title}</motion.h1>
                 </div>
                 <div className='w-full h-[30vh] md:flex justify-center m-auto lg:w-[70vw] xl:w-[60rem] '>
                   <motion.img src={items.image} alt="" className='object-contain h-full w-full md:w-[20rem] lg:w-full' whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}/>
