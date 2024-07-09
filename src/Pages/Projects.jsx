@@ -12,21 +12,21 @@ const Projects = () => {
     {
       id: 1,
       title: "Online Quotation Management for Triple O Glass Company",
-      description: "Web Based Software solution that would address the handling of the volume of customer queries in terms  of product prices and service prices.",
+      description: "A web-based software solution that addresses the handling of a high volume of customer queries regarding product and service prices",
       technologies: ["ReactJS", "EmailJS"],
       image: tripleoGlass1,
     },
     {
       id: 2,
       title: "Baby Monitoring System using ESP8266 and Python",
-      description: "Creating a baby monitoring system that will be able to detect the room temperature and humidity, color of the diaper, environmental sound and motion in the room",
+      description: "Creating a baby monitoring system using mobile that can detect room temperature and humidity, diaper color, environmental sound, and motion in the room",
       technologies: ["Arduino", "ESP8266", "Python", "C++", "Kodular"],
       image: bantaybaby1,
     },
     {
       id: 3,
       title: "FITTOLOGY: A Web Based AI Pose Correction Workout Tool for Beginners with Audio-Visual Feedback using Raspberry PI 4",
-      description: "Develop a website with real time posture correction that will  help the beginners to start their gym era",
+      description: "Develop a website with real-time posture correction to help beginners start their gym journey",
       technologies: ["Python", "ReactJS", "Tailwind CSS", "REST API", "MediaPipe", "Axios"],
       image: fittology1,
     }
