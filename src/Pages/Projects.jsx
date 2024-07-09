@@ -2,6 +2,9 @@ import React from 'react'
 import tripleoGlass1 from "../assets/TripleOGlass-1.png"
 import bantaybaby1 from "../assets/BantayBaby-1.png"
 import fittology1 from "../assets/Fittology-1.png"
+import { motion } from 'framer-motion'
+
+
 
 const Projects = () => {
 
@@ -33,7 +36,7 @@ const Projects = () => {
   return (
     <div className='w-full  bg-white' id='projects'>
       <div className='mt-10'>
-        <h1 className='text-center montserratextrabold text-4xl'>Projects</h1>
+        <motion.h1 className='text-center montserratextrabold text-4xl' whileInView={{opacity: 1, y: 0}} initial={{opacity: 0, y: -100}} transition={{duration: 1}}>Projects</motion.h1>
         <div className='mt-5'>
           {myPortfolio.map((items,i)=>{
             return(
@@ -42,9 +45,9 @@ const Projects = () => {
                   <h1 className='text-xs text-center w-[65vw] montserratbold mb-3 md:hidden'>{items.title}</h1>
                 </div>
                 <div className='w-full h-[30vh] md:flex justify-center m-auto lg:w-[70vw] xl:w-[60rem] '>
-                  <img src={items.image} alt="" className='object-contain h-full w-full md:w-[20rem] lg:w-full '/>
+                  <motion.img src={items.image} alt="" className='object-contain h-full w-full md:w-[20rem] lg:w-full' whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}/>
                 </div>
-                <div className='w-[90vw] flex flex-col justify-center items-start m-auto md:w-[50vw] xl:ml-[-10rem] '>
+                <motion.div className='w-[90vw] flex flex-col justify-center items-start m-auto md:w-[50rem] xl:ml-[-10rem]' whileInView={{opacity: 1, y: 0}} initial={{opacity: 0, y: 100}} transition={{duration: 1}}>
                   <h1 className='text-xs w-[50vw] montserratbold hidden md:block lg:w-[40vw] xl:w-[27vw] '>{items.title}</h1>
                   <p className=' text-center text-xs md:text-justify md:mr-5 lg:w-[25rem] montserratmedium '>{items.description}</p>
                   <div className='grid grid-cols-3 md:grid-cols-4 md:w-[23rem] w-[17rem] mt-2 gap-2 '>
@@ -56,7 +59,7 @@ const Projects = () => {
                       )
                     })}
                   </div>
-                </div>
+                </motion.div>
               </div>
             )
           })}
