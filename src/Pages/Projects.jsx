@@ -15,6 +15,8 @@ const Projects = () => {
       description: "Developed a web based software solution that addresses the handling of a high volume of customer queries regarding product and service prices",
       technologies: ["ReactJS", "EmailJS"],
       image: tripleoGlass1,
+      githubLink: "https://github.com/0ojireho0/Triple-O-Glass",
+      titleproject: "Triple O Glass",
     },
     {
       id: 2,
@@ -22,6 +24,8 @@ const Projects = () => {
       description: "Created a baby monitoring system using mobile that can detect room temperature and humidity, diaper color, environmental sound, and motion in the room ",
       technologies: ["Arduino", "ESP8266", "Python", "C++", "Kodular"],
       image: bantaybaby1,
+      githubLink: "https://github.com/0ojireho0/Bantay-Baby-ESP8266",
+      titleproject: "Baby Monitoring System",
     },
     {
       id: 3,
@@ -29,6 +33,8 @@ const Projects = () => {
       description: "Developed a website with real time posture correction to help beginners start their gym journey and used python for posture correction, Flask API for fetch data to ReactJS, and Raspberry Pi 4 for hardware",
       technologies: ["Python", "ReactJS", "Tailwind CSS", "REST API", "MediaPipe", "Axios"],
       image: fittology1,
+      githubLink: "https://github.com/0ojireho0/Thesis-React",
+      titleproject: "Fittology",
     }
   ]
 
@@ -58,6 +64,9 @@ const Projects = () => {
                         </div>
                       )
                     })}
+                  </div>
+                  <div className='mt-2'>
+                    <h1 className='montserratbold text-xs'>Link: <a href={items.githubLink} className='hover:text-[#0C359E] duration-300' target='_blank'>{items.titleproject}</a></h1>
                   </div>
                 </motion.div>
               </div>
