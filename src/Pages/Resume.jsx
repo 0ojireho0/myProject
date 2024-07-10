@@ -30,7 +30,7 @@ const Resume = () => {
               </PDFDownloadLink>
             </span>
           </motion.div>
-          <motion.div className='border-[3px] border-black w-[12rem] rounded-full h-12 items-center flex justify-between mt-3 md:mt-0 md:ml-4 cursor-pointer' onClick={toggleView} whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1}}>
+          <motion.div className='border-[3px] border-black w-[12rem] rounded-full h-12 items-center flex justify-between mt-3 md:mt-0 md:ml-4 cursor-pointer' onClick={toggleView} whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}>
             <FaMagnifyingGlass className='ml-5 text-2xl text-[#0C359E] ' /><span className='text-[#0C359E] montserratextrabold text-xl mr-auto ml-5'>View</span>
           </motion.div>
         </div>
