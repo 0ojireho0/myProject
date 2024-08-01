@@ -38,7 +38,7 @@ const Resume = () => {
       </div>
 
       {showView && (
-        <motion.div className='fixed top-0 w-full h-full bg-white z-50 pb-3' whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}>
+        <motion.div className='fixed top-0 w-full h-full bg-white z-50 pb-10' whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}>
           <div className='flex justify-end mr-5 ' >
             <h1 className='text-2xl md:cursor-pointer' onClick={toggleView}>x</h1>
           </div>
